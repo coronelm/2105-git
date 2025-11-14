@@ -18,3 +18,4 @@ CREATE TABLE attendance ( attendance_id INT PRIMARY KEY, student_id INT, date DA
 INSERT INTO users (user_id, username, password, role) VALUES (1, 'groupten','ten', 'student');
 CREATE TABLE fees (fee_id INT PRIMARY KEY, student_id INT NOT NULL, amount DECIMAL(10,2) NOT NULL);
 CREATED TABLE departments (dept_id INT PRIMARY KEY, dept_name VARCHAR(50));
+CREATE TABLE departments (dept_id INT PRIMARY KEY, dept_name VARCHAR(50));
