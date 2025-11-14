@@ -10,3 +10,5 @@ FOREIGN KEY (class_id) REFERENCES classes(class_id));
 CREATE TABLE grades (grade_id INT PRIMARY KEY, student_id INT, subject 
 VARCHAR(50), grade FLOAT, FOREIGN KEY (student_id) REFERENCES 
 students(student_id));
+CREATE TABLE subjects ( subject_id INT PRIMARY KEY, subject_name 
+VARCHAR(50), dept_id INT, FOREIGN KEY (dept_id) REFERENCES departments(dept_id) );
