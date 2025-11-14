@@ -15,3 +15,4 @@ VARCHAR(50), dept_id INT, FOREIGN KEY (dept_id) REFERENCES departments(dept_id) 
 CREATE TABLE users ( user_id INT PRIMARY KEY, username VARCHAR(50), 
 password VARCHAR(100), role VARCHAR(20) );
 CREATE TABLE attendance ( attendance_id INT PRIMARY KEY, student_id INT, date DATE, status VARCHAR(10), FOREIGN KEY (student_id) REFERENCES students(student_id) );
+INSERT INTO users (user_id, username, password, role) VALUES (1, 'groupten','ten', 'student');
