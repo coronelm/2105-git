@@ -17,3 +17,4 @@ password VARCHAR(100), role VARCHAR(20) );
 CREATE TABLE attendance ( attendance_id INT PRIMARY KEY, student_id INT, date DATE, status VARCHAR(10), FOREIGN KEY (student_id) REFERENCES students(student_id) );
 INSERT INTO users (user_id, username, password, role) VALUES (1, 'groupten','ten', 'student');
 CREATE TABLE fees (fee_id INT PRIMARY KEY, student_id INT NOT NULL, amount DECIMAL(10,2) NOT NULL);
+CREATED TABLE departments (dept_id INT PRIMARY KEY, dept_name VARCHAR(50));
